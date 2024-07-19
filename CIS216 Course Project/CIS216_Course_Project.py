@@ -1,4 +1,4 @@
-# Kyle Stewart Cis216 Couurse Project
+# Kyle Stewart CIS261 Couurse Project
 
 total_employees = 0
 total_hours = 0.00
