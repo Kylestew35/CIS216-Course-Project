@@ -47,7 +47,7 @@ def display_totals(employees, hours, gross, tax, net):
     
 while True:
     name = get_employee_name()
-    if name.lower() == "end":
+    if name.upper() == "END":
         break
     hours = get_total_hours()
     rate = get_hourly_rate()
