@@ -46,12 +46,12 @@ def display_totals(employees, hours, gross, tax, net):
     print(f"Total Net Pay: {net}")
     
 while True:
-    name = employee_name()
+    name = get_employee_name()
     if name.lower() == "end":
         break
-    hours = total_hours()
-    rate = hourly_rate()
-    tax_rate = income_tax_rate()
+    hours = get_total_hours()
+    rate = get_hourly_rate()
+    tax_rate = get_income_tax_rate()
     gross, tax, net = calculate_pay(hours, rate, tax_rate)
     display_employee_info(name, hours, rate, gross, tax_rate, tax, net)
     total_employees += 1
