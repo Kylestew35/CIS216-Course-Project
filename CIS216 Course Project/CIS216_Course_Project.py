@@ -55,10 +55,10 @@ def display_totals(totals):
 
 while True:
     from_date = get_date("Enter the from date (mm/dd/yyyy): ")
+    if from_date.upper() == "END":
+        break
     to_date = get_date("Enter the to date (mm/dd/yyyy): ")
     name = get_employee_name()
-    if name.upper() == "END":
-        break
     hours = get_total_hours()
     rate = get_hourly_rate()
     tax_rate = get_income_tax_rate()
